@@ -1,0 +1,17 @@
+p{color:red}
+
+li{
+    color:blue}
+li:nth-child(2) {width: 100px;
+                height: 100px; 
+}   
+div.apple {
+    font-size: large;
+  }
+  
+  div.ship {
+    font-size: large;
+  }
+  li.a{color: red;}
+  li.c{color:red}
+  
