@@ -10,40 +10,10 @@ class Overworld {
 this.ctx.drawImage(image,0,0)
   };
     image.src = "/images/DemoLower.png";
-
-
-    const x = 5;
-    const y = 6;
-
-    const shadow = new Image();
-    shadow.onload = () => {
-        this.ctx.drawImage(
-        shadow,
-        0, //left cut
-        0, //top cut
-        32, //width cut
-        32,//height cut
-        x * 16 - 8,
-        y * 16 - 18,
-        32,
-        32,
-    )
-        }
-    shadow.src = "/images/shadow.png";
-
-    const hero = new Image();
-    hero.onload = () => {this.ctx.drawImage(
-        hero,
-        0, //left cut
-        0, //top cut
-        32, //width cut
-        32,//height cut
-        x * 16 - 8,
-        y * 16 - 18,
-        32,
-        32,
-    )
-    }
-hero.src = "/images/hero.png";
+  //Place some game objects!
+        const hero = new GameObject({
+            x: 5,
+            y: 6,
+        })
     }
 }
