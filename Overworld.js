@@ -12,7 +12,7 @@ this.ctx.drawImage(image,0,0)
     image.src = "/images/DemoLower.png";
 
 
-    const x =0;
+    const x = 0;
     const y = 0;
     const hero = new Image();
     hero.onload = () => {this.ctx.drawImage(
