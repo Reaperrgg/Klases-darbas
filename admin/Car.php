@@ -1,15 +1,17 @@
 <?php
+
 class Car
 {
     public string $spalva;
     public string $greitis;
 
-    public function  vaziuoti (): void
+    public function vaziuoti(): void
     {
-        echo"Automobilis vaziuoja".$this->greitis."greiciu";
+        echo "Automobilis vaziuoja" . $this->greitis . "greiciu";
     }
 
-    public function  gautiSpalva():string{
+    public function gautiSpalva(): string
+    {
         return $this->spalva;
     }
 

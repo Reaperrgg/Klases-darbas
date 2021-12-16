@@ -10,7 +10,7 @@ include 'admin/Car.php';
 
 $car = new Car();
 
-$car ->spalva = 'raudona';
-$car ->greitis = '100kmph';
+$car->spalva = 'raudona';
+$car->greitis = '100kmph';
 
-var_dump($car);
+echo $car->gautiSpalva();
