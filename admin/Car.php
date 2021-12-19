@@ -4,6 +4,7 @@ class Car
 {
     public string $spalva;
     public string $greitis;
+    public string $dureles;
 
     public function vaziuoti(): void
     {
@@ -14,5 +15,8 @@ class Car
     {
         return $this->spalva;
     }
-
+    public function dureles(): void
+    {
+        echo "Atomobilio dureliu skaicius" .$this->dureles;
+    }
 }

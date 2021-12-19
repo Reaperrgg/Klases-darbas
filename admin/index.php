@@ -6,11 +6,17 @@ if(isset($_SESSION['arPrisijunges'])){
     header("Location: http://localhost/loginform.php");
 }
 */
-include 'admin/Car.php';
+include 'Car.php';
 
 $car = new Car();
 
 $car->spalva = 'raudona';
 $car->greitis = '100kmph';
+$car->dureles = "4";
+
 
 echo $car->gautiSpalva();
+echo '<br>';
+$car->vaziuoti();
+echo'<br>';
+$car->dureles();
