@@ -9,10 +9,12 @@ class Overworld {
         const step =() => {
 
             this.map.drawLowerImage(this.ctx);
+
             Object.values(this.map.gameObjects).forEach(object =>{
               object.sprite.draw(this.ctx);
             })
             this.map.drawUpperImage(this.ctx);
+
             requestAnimationFrame(()=>{
                 step();
             })
@@ -21,7 +23,7 @@ class Overworld {
     }
 
 init() {
-    this.map = new OverworldMap(window.OverworldMaps.Kitchen);
+    this.map = new OverworldMap(window.OverworldMaps.DemoRoom);
     this.startGameLoop();
     }
 }

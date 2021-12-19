@@ -47,7 +47,7 @@ window.OverworldMaps = {
             npcB: new GameObject({
                 x: 10,
                 y: 4,
-                    src: "/images/npc3.png"
+                src: "/images/npc3.png"
                 })
             }
         },
