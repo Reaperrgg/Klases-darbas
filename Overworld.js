@@ -5,27 +5,23 @@ class Overworld {
         this.ctx = this.canvas.getContext("2d");
         this.map = null;
     }
-
-   startGameLoop(){
-        const step = () => {
+    startGameLoop (){
+        const step =() => {
 
             this.map.drawLowerImage(this.ctx);
-            Object.values(this.map.gameObjects).forEach(object => {
-                object.sprite.draw(this.ctx);
+            Object.values(this.map.gameObjects).forEach(object =>{
+              object.sprite.draw(this.ctx);
             })
             this.map.drawUpperImage(this.ctx);
-
-            console.log("stepping!");
-            requestAnimationFrame(() =>{
+            requestAnimationFrame(()=>{
                 step();
-        })
-       }
-       step();
-   }
+            })
+        }
+        step();
+    }
 
-
-    init() {
-        this.map = new OverworldMap(window.OverworldMaps.DemoRoom);
-        this.startGameLoop();
+init() {
+    this.map = new OverworldMap(window.OverworldMaps.DemoRoom);
+    this.startGameLoop();
     }
 }
