@@ -1,6 +1,6 @@
 class OverworldMap {
     constructor(config) {
-        this.gameObject = config.gameObjects;
+        this.gameObjects = config.gameObjects;
 
         this.lowerImage = new Image();
         this.lowerImage.src = config.lowerSrc;
@@ -18,7 +18,7 @@ class OverworldMap {
     }
 }
 
-window.OverworldMap = {
+window.OverworldMaps = {
     DemoRoom: {
         lowerSrc: "/images/DemoLower.png",
         upperSrc: "/images/DemoUpper.png",
